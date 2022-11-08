@@ -6,18 +6,20 @@
     text-align: center;
     margin-bottom: 12px;
 }
+
 .form-field {
     position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
- }   
+}
+
 .form-field-comment {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
 }
+
 .form-label {
     margin-bottom: 4px;
     font-size: 12px;
@@ -25,6 +27,7 @@
     letter-spacing: 0.01em;
     color: var(--secondary-text-color);
 }
+
 .form-input {
     margin: 0;
     padding: 12px 42px;
@@ -33,10 +36,12 @@
     outline: none;
     cursor: pointer;
     transition: border 250ms var(--timing-function);
-&:focus {
-    border: 1px solid var(--accent-text-color);
-        }
+
+    &:focus {
+        border: 1px solid var(--accent-text-color);
+    }
 }
+
 .form-textarea {
     margin: 0;
     height: 120px;
@@ -45,63 +50,87 @@
     border-radius: 4px;
     outline: none;
     cursor: pointer;
-&::placeholder {
-    color: rgba(117, 117, 117, 0.5);
-        }
-&:focus {
-    border: 1px solid var(--accent-text-color);
-        }
+
+    &::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+    }
+
+    &:focus {
+        border: 1px solid var(--accent-text-color);
+    }
 }
+
 .from-icon {
     position: absolute;
     display: inline-block;
     top: 50%;
     left: 15px;
     transition: fill 250ms var(--timing-function);
-&:focus {
-     fill: var(--accent-text-color);
-       }
-.form-input:focus+& {
-      fill: var(--accent-text-color);
-        }
-}
-.form-check {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
+
+    &:focus {
+        fill: var(--accent-text-color);
+    }
+
+    .form-input:focus+& {
+        fill: var(--accent-text-color);
+    }
 }
 
-.from-icon-check {
-    position: absolute;
-    display: inline-block;
-    top: 3px;
-    left: 7px;
+.form-text-check span {
     width: 16px;
     height: 15px;
     border: 2px solid #212121;
     border-radius: 2px;
     transition: border 250ms var(--accent-text-color),
     background-color 250ms var(--accent-text-color);
-.from-checkbox:checked+& {
-    border: var(--accent-text-color);
-    background-color: var(--accent-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    fill: transparent;
+
+}
+ .form-text-check{
+    font-size: 14px;
+     line-height: 1.71;
+     letter-spacing: 0.03em;
+     color: var(--secondary-text-color);
+     display: flex;
+     align-items: center;
+     margin-bottom: 30px;
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+            font-size: 12px;
+         
         }
 }
 
-.form-label-check {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
-}
-
-
 .consent-link {
     text-decoration: underline;
-    text-underline-offset: 3px;
+    text-underline-offset: 3px;  
     color: var(--accent-text-color);
+    display: flex;
+    align-items: center;
 }
+.from-checkbox:checked + .form-text-check span{
+    border: var(--accent-text-color);
+    background-color: var(--accent-text-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .form-btn {
     display: block;

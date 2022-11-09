@@ -90,6 +90,7 @@
 }
 .connect__nav {
     font-style: normal;
+    font-size: 12px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -100,6 +101,9 @@
 &:focus {
     color: var(--accent-text-color);
         }
+   @include desktop{
+    font-size: 14px;
+   }     
 }
 
 .connect__icon {

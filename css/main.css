@@ -202,6 +202,7 @@ section {
 
 .connect__nav {
   font-style: normal;
+  font-size: 12px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -211,6 +212,11 @@ section {
 }
 .connect__nav:hover, .connect__nav:focus {
   color: var(--accent-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .connect__nav {
+    font-size: 14px;
+  }
 }
 
 .connect__icon {
@@ -644,12 +650,17 @@ section {
 
 .advantage-title {
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
-  text-align: center;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .advantage-title {
+    text-align: center;
+  }
 }
 
 .advantage-text {
@@ -658,6 +669,10 @@ section {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   width: 100%;
+}
+
+.features {
+  padding-top: 0;
 }
 
 @media screen and (max-width: 1199px) {
@@ -746,12 +761,17 @@ section {
 
 .team-top-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .team-top-title {
+    font-size: 36px;
+  }
 }
 
 .team-bottom-title {
@@ -805,12 +825,17 @@ section {
 
 .clients-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .clients-title {
+    font-size: 36px;
+  }
 }
 
 .clients-list-icon {
@@ -892,7 +917,7 @@ section {
     gap: 60px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 780px) and (max-width: 1199px) {
   .footer-general-block {
     display: flex;
     flex-direction: row;
@@ -919,6 +944,12 @@ section {
 @media screen and (min-width: 1200px) {
   .footer-left-block {
     margin-right: 70px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-right-block {
+    margin-right: 93px;
   }
 }
 

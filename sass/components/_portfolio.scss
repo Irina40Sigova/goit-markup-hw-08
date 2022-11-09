@@ -1,13 +1,22 @@
 .portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 }
 
 .portfolio-list.btn {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 50px;
+    @media screen and (min-width: 320px) and (max-width: 767px){
+        margin-bottom: 40px;
+    }
+    @include tablet  {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 50px;
+    }
 }
 
 .portfolio-list {
@@ -15,7 +24,15 @@
     flex-wrap: wrap;
     gap: 30px;
 }
-
+.portfolio-item.picture{
+        width: 100%;
+    @include tablet {
+      width: calc((100% - 30px) / 2);
+        }
+    @include desktop {
+            width: calc((100% - 60px) / 3);
+        }
+}
 
 .portfolio-wrap {
     position: relative;

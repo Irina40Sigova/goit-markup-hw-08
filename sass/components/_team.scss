@@ -2,8 +2,8 @@
     background-color: #F5F4FA;
 }
 
-.team-item {
-  width: 100%;
+.team-item{
+   width: 100%;
 
 @include tablet {
    width: calc((100% - 30px) / 2);

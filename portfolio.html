@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>homework2</title>
+    <title>homework</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,7 +20,6 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-
   <body>
     <header class="header">
       <div class="container header__container">
@@ -61,6 +60,95 @@
             </li>
           </ul>
         </div>
+        <button type="button" class="menu-btn-open" data-menu-open>
+          <svg class="menu-open-icon" width="40px" height="40px">
+            <use href="./images/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container mob-container">
+          <div class="mob-top-list">
+            <button type="button" class="menu-btn-close" data-menu-close>
+              <svg class="menu-close-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link current" href="">Студія</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-bottom-list">
+            <ul class="mob-connect list">
+              <li class="mob-connect-item tel">
+                <a href="tel:+380961111111" class="mob-connect-tel link">
+                  +38 096 111 11 11
+                </a>
+              </li>
+
+              <li class="mob-connect-item mail">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-connect-mail link"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+
+            <ul class="mob-soc list">
+              <li class="mob-soc-item">
+                <a
+                  class="mob-soc-link link"
+                  href=""
+                  rel="noreferrer noopener nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob-soc-item">
+                <a
+                  class="mob-soc-link link"
+                  href=""
+                  rel="noreferrer noopener nofollow"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mob-soc-item">
+                <a
+                  class="mob-soc-link link"
+                  href=""
+                  target="_blank"
+                  rel="noreferrer noopener nofollow"
+                >
+                  Facebook</a
+                >
+              </li>
+
+              <li class="mob-soc-item">
+                <a
+                  class="mob-soc-link link"
+                  href=""
+                  target="_blank"
+                  rel="noreferrer noopener nofollow"
+                >
+                  LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -98,7 +186,34 @@
           <ul class="portfolio-list list">
             <li class="portfolio-item picture">
               <div class="portfolio-wrap">
-                <img src="./images/imgp1.jpg" alt="Ноутбук" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-port-dec1-1x.jpg 1x,
+                      ./images/img-port-dec1-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-port-tab1-1x.jpg 1x,
+                      ./images/img-port-tab1-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-port-mob1-1x.jpg 1x,
+                      ./images/img-port-mob1-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/img-port-dec1-1x.jpg"
+                    alt="Ноутбук"
+                    width="450"
+                  />
+                </picture>
                 <p class="portfolio-top-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -113,7 +228,34 @@
 
             <li class="portfolio-item picture">
               <div class="portfolio-wrap">
-                <img src="./images/imgp2.jpg" alt="Баскетбол" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-port2-dec1x.jpg 1x,
+                      ./images/img-port2-dec2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-port2-tab1x.jpg 1x,
+                      ./images/img-port2-tab2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-port2-mob1x.jpg 1x,
+                      ./images/img-port2-mob2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/img-port2-dec1x.jpg"
+                    alt="Баскетбол"
+                    width="450"
+                  />
+                </picture>
                 <p class="portfolio-top-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -130,11 +272,35 @@
 
             <li class="portfolio-item picture">
               <div class="portfolio-wrap">
-                <img
-                  src="./images/imgp3.jpg"
-                  alt="Логотип ресторана"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-port3-dec1x.jpg 1x,
+                      ./images/img-port3-dec2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-port3-tab1x.jpg 1x,
+                      ./images/img-port3-tab2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-port3-mob1x.jpg 1x,
+                      ./images/img-port3-mob2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/img-port3-dec1x.jpg"
+                    alt="Логотип ресторана"
+                    width="450"
+                  />
+                </picture>
+
                 <p class="portfolio-top-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -151,7 +317,35 @@
 
             <li class="portfolio-item picture">
               <div class="portfolio-wrap">
-                <img src="./images/imgp4.jpg" alt="Навушники" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-port4-dec1x.jpg 1x,
+                      ./images/img-port4-dec2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-port4-tab1x.jpg 1x,
+                      ./images/img-port4-tab2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-port4-mob1x.jpg 1x,
+                      ./images/img-port4-mob2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/img-port4-dec1x.jpg"
+                    alt="Навушники"
+                    width="450"
+                  />
+                </picture>
+
                 <p class="portfolio-top-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -168,7 +362,35 @@
 
             <li class="portfolio-item picture">
               <div class="portfolio-wrap">
-                <img src="./images/imgp5.jpg" alt="Коробки" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-port5-dec1x.jpg 1x,
+                      ./images/img-port5-dec2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-port5-tab1x.jpg 1x,
+                      ./images/img-port5-tab2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-port5-mob1x.jpg 1x,
+                      ./images/img-port5-mob2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/img-port5-dec1x.jpg"
+                    alt="Коробки"
+                    width="450"
+                  />
+                </picture>
+
                 <p class="portfolio-top-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -185,7 +407,35 @@
 
             <li class="portfolio-item picture">
               <div class="portfolio-wrap">
-                <img src="./images/imgp6.jpg" alt="Монітор" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-port6-dec1x.jpg 1x,
+                      ./images/img-port6-dec2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-port6-tab1x.jpg 1x,
+                      ./images/img-port6-tab2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-port6-mob1x.jpg 1x,
+                      ./images/img-port6-mob2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/img-port6-dec1x.jpg"
+                    alt="Монітор"
+                    width="450"
+                  />
+                </picture>
+
                 <p class="portfolio-top-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -202,7 +452,35 @@
 
             <li class="portfolio-item picture">
               <div class="portfolio-wrap">
-                <img src="./images/imgp7.jpg" alt="Книга" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-port7-dec1x.jpg 1x,
+                      ./images/img-port7-dec2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-port7-tab1x.jpg 1x,
+                      ./images/img-port7-tab2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-port7-mob1x.jpg 1x,
+                      ./images/img-port7-mob2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/img-port7-dec1x.jpg"
+                    alt="Книга"
+                    width="450"
+                  />
+                </picture>
+
                 <p class="portfolio-top-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -219,7 +497,35 @@
 
             <li class="portfolio-item picture">
               <div class="portfolio-wrap">
-                <img src="./images/imgp8.jpg" alt="Брелок" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-port8-dec1x.jpg 1x,
+                      ./images/img-port8-dec2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-port8-tab1x.jpg 1x,
+                      ./images/img-port8-tab2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-port8-mob1x.jpg 1x,
+                      ./images/img-port8-mob2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/img-port8-dec1x.jpg"
+                    alt="Брелок"
+                    width="450"
+                  />
+                </picture>
+
                 <p class="portfolio-top-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -236,11 +542,31 @@
 
             <li class="portfolio-item picture">
               <div class="portfolio-wrap">
-                <img
-                  src="./images/imgp9.jpg"
-                  alt="Руки на клавіатурі"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-port9-dec1x.jpg 1x,
+                      ./images/img-port9-dec2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-port9-tab1x.jpg 1x,
+                      ./images/img-port9-tab2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-port9-mob1x.jpg 1x,
+                      ./images/img-port9-mob2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./images/img-port9-dec1x.jpg" alt="Руки на клавіатурі" width="450" />
+                </picture>
+
                 <p class="portfolio-top-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -327,5 +653,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
